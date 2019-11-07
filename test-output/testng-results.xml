@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="150741" started-at="2019-11-06T21:33:43Z" finished-at="2019-11-06T21:36:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="150741" started-at="2019-11-06T21:33:43Z" finished-at="2019-11-06T21:36:14Z">
+      <class name="newReportD.RD">
+        <test-method status="PASS" signature="lauchTest()[pri:0, instance:newReportD.RD@69ea3742]" name="lauchTest" is-config="true" duration-ms="8" started-at="2019-11-06T14:33:43Z" finished-at="2019-11-06T14:33:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lauchTest -->
+        <test-method status="PASS" signature="tc01_reportLoading()[pri:0, instance:newReportD.RD@69ea3742]" name="tc01_reportLoading" duration-ms="12940" started-at="2019-11-06T14:33:43Z" finished-at="2019-11-06T14:33:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_reportLoading -->
+        <test-method status="PASS" signature="tc02_informationPresent_withoutData()[pri:0, instance:newReportD.RD@69ea3742]" name="tc02_informationPresent_withoutData" duration-ms="33795" started-at="2019-11-06T14:33:56Z" finished-at="2019-11-06T14:34:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_informationPresent_withoutData -->
+        <test-method status="PASS" signature="tc03_informationPresent_withData()[pri:0, instance:newReportD.RD@69ea3742]" name="tc03_informationPresent_withData" duration-ms="23132" started-at="2019-11-06T14:34:30Z" finished-at="2019-11-06T14:34:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_informationPresent_withData -->
+        <test-method status="PASS" signature="tc04_LoadingFail()[pri:0, instance:newReportD.RD@69ea3742]" name="tc04_LoadingFail" duration-ms="41578" started-at="2019-11-06T14:34:53Z" finished-at="2019-11-06T14:35:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_LoadingFail -->
+        <test-method status="PASS" signature="tc05_LoadingFail_NoData()[pri:0, instance:newReportD.RD@69ea3742]" name="tc05_LoadingFail_NoData" duration-ms="38720" started-at="2019-11-06T14:35:35Z" finished-at="2019-11-06T14:36:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_LoadingFail_NoData -->
+        <test-method status="PASS" signature="close()[pri:0, instance:newReportD.RD@69ea3742]" name="close" is-config="true" duration-ms="546" started-at="2019-11-06T14:36:14Z" finished-at="2019-11-06T14:36:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- newReportD.RD -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
