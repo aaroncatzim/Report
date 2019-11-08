@@ -1,41 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="5" total="10" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="150741" started-at="2019-11-06T21:33:43Z" finished-at="2019-11-06T21:36:14Z">
+  <suite name="Default suite" duration-ms="251844" started-at="2019-11-08T04:40:17Z" finished-at="2019-11-08T04:44:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="150741" started-at="2019-11-06T21:33:43Z" finished-at="2019-11-06T21:36:14Z">
-      <class name="newReportD.RD">
-        <test-method status="PASS" signature="lauchTest()[pri:0, instance:newReportD.RD@69ea3742]" name="lauchTest" is-config="true" duration-ms="8" started-at="2019-11-06T14:33:43Z" finished-at="2019-11-06T14:33:43Z">
+    <test name="Default test" duration-ms="251844" started-at="2019-11-08T04:40:17Z" finished-at="2019-11-08T04:44:29Z">
+      <class name="newReportD.allTCs">
+        <test-method status="PASS" signature="lauchTest()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="lauchTest" is-config="true" duration-ms="9" started-at="2019-11-07T21:40:17Z" finished-at="2019-11-07T21:40:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lauchTest -->
-        <test-method status="PASS" signature="tc01_reportLoading()[pri:0, instance:newReportD.RD@69ea3742]" name="tc01_reportLoading" duration-ms="12940" started-at="2019-11-06T14:33:43Z" finished-at="2019-11-06T14:33:56Z">
+        <test-method status="PASS" signature="config1studentID()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="config1studentID" duration-ms="10333" started-at="2019-11-07T21:40:17Z" finished-at="2019-11-07T21:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config1studentID -->
+        <test-method status="PASS" signature="secondconsult()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="secondconsult" duration-ms="3942" started-at="2019-11-07T21:40:28Z" finished-at="2019-11-07T21:40:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondconsult -->
+        <test-method status="PASS" signature="secondconsult1()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="secondconsult1" duration-ms="3927" started-at="2019-11-07T21:40:32Z" finished-at="2019-11-07T21:40:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondconsult1 -->
+        <test-method status="PASS" signature="tc01_reportLoading()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="tc01_reportLoading" duration-ms="13028" started-at="2019-11-07T21:40:36Z" finished-at="2019-11-07T21:40:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01_reportLoading -->
-        <test-method status="PASS" signature="tc02_informationPresent_withoutData()[pri:0, instance:newReportD.RD@69ea3742]" name="tc02_informationPresent_withoutData" duration-ms="33795" started-at="2019-11-06T14:33:56Z" finished-at="2019-11-06T14:34:30Z">
+        <test-method status="FAIL" signature="tc02_informationPresent_withoutData()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="tc02_informationPresent_withoutData" duration-ms="33487" started-at="2019-11-07T21:40:49Z" finished-at="2019-11-07T21:41:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[-------------------------------------- Report is loading -> Data is not present -------------------------------------- ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: -------------------------------------- Report is loading -> Data is not present -------------------------------------- 
+	at org.testng.Assert.fail(Assert.java:94)
+	at newReportD.allTCs.tc02_informationPresent_withoutData(allTCs.java:165)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc02_informationPresent_withoutData -->
-        <test-method status="PASS" signature="tc03_informationPresent_withData()[pri:0, instance:newReportD.RD@69ea3742]" name="tc03_informationPresent_withData" duration-ms="23132" started-at="2019-11-06T14:34:30Z" finished-at="2019-11-06T14:34:53Z">
+        <test-method status="PASS" signature="tc03_informationPresent_withData()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="tc03_informationPresent_withData" duration-ms="20740" started-at="2019-11-07T21:41:22Z" finished-at="2019-11-07T21:41:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc03_informationPresent_withData -->
-        <test-method status="PASS" signature="tc04_LoadingFail()[pri:0, instance:newReportD.RD@69ea3742]" name="tc04_LoadingFail" duration-ms="41578" started-at="2019-11-06T14:34:53Z" finished-at="2019-11-06T14:35:35Z">
+        <test-method status="FAIL" signature="tc04_LoadingFail()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="tc04_LoadingFail" duration-ms="41626" started-at="2019-11-07T21:41:43Z" finished-at="2019-11-07T21:42:25Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[-------------------------------------- Report FAIL -> Report was not found --------------------------------------]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: -------------------------------------- Report FAIL -> Report was not found --------------------------------------
+	at org.testng.Assert.fail(Assert.java:94)
+	at newReportD.allTCs.tc04_LoadingFail(allTCs.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc04_LoadingFail -->
-        <test-method status="PASS" signature="tc05_LoadingFail_NoData()[pri:0, instance:newReportD.RD@69ea3742]" name="tc05_LoadingFail_NoData" duration-ms="38720" started-at="2019-11-06T14:35:35Z" finished-at="2019-11-06T14:36:14Z">
+        <test-method status="FAIL" signature="tc05_LoadingFail_NoData()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="tc05_LoadingFail_NoData" duration-ms="38390" started-at="2019-11-07T21:42:25Z" finished-at="2019-11-07T21:43:03Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[-------------------------------------- Report Data is not present --------------------------------------]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: -------------------------------------- Report Data is not present --------------------------------------
+	at org.testng.Assert.fail(Assert.java:94)
+	at newReportD.allTCs.tc05_LoadingFail_NoData(allTCs.java:277)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc05_LoadingFail_NoData -->
-        <test-method status="PASS" signature="close()[pri:0, instance:newReportD.RD@69ea3742]" name="close" is-config="true" duration-ms="546" started-at="2019-11-06T14:36:14Z" finished-at="2019-11-06T14:36:14Z">
+        <test-method status="FAIL" signature="LoadingFail_NoDatamail()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="LoadingFail_NoDatamail" duration-ms="44023" started-at="2019-11-07T21:43:03Z" finished-at="2019-11-07T21:43:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[-------------------------------------- Test Element was not found --------------------------------------]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: -------------------------------------- Test Element was not found --------------------------------------
+	at org.testng.Assert.fail(Assert.java:94)
+	at newReportD.allTCs.LoadingFail_NoDatamail(allTCs.java:346)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadingFail_NoDatamail -->
+        <test-method status="FAIL" signature="LoadingFailmail()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="LoadingFailmail" duration-ms="41671" started-at="2019-11-07T21:43:47Z" finished-at="2019-11-07T21:44:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[-------------------------------------- Report FAIL -> Report was not found --------------------------------------]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: -------------------------------------- Report FAIL -> Report was not found --------------------------------------
+	at org.testng.Assert.fail(Assert.java:94)
+	at newReportD.allTCs.LoadingFailmail(allTCs.java:411)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadingFailmail -->
+        <test-method status="PASS" signature="close()[pri:0, instance:newReportD.allTCs@78c03f1f]" name="close" is-config="true" duration-ms="642" started-at="2019-11-07T21:44:29Z" finished-at="2019-11-07T21:44:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- newReportD.RD -->
+      </class> <!-- newReportD.allTCs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
